@@ -35,6 +35,7 @@ a {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 /*----------------------HEADER-------------------- */
@@ -211,7 +212,6 @@ img {
 }
 
 .features {
-  max-width: 320px;
   /* padding-top: 120px;
   padding-bottom: 120px; */
   padding-top: 96px;
@@ -300,7 +300,6 @@ img {
 
 .team-list-item {
   margin: 0 auto;
-  max-width: 320px;
   background-color: #ffffff;
   /* width: calc((100% - 72px) / 4); */
   border-radius: 0px 0px 4px 4px;
@@ -364,19 +363,24 @@ img {
 /* --------------------------------------Portfolio -------------------------*/
 
 .portfolio {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
-  row-gap: 48px;
+  flex-direction: column;
+  /* gap: 24px;
+  row-gap: 48px; */
+  gap: 48px;
 }
 
 .portfolio-list-item {
-  width: calc((100% - 48px) / 3);
+  max-width: 320px;
+  /* width: calc((100% - 48px) / 3); */
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -410,6 +414,7 @@ img {
 }
 
 .portfolio-title {
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -448,12 +453,15 @@ img {
 }
 
 .footer-container {
+  flex-wrap: wrap;
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  /* align-items: baseline; */
 }
 
 .footer-inf {
-  margin-right: 120px;
+  /* margin-right: 120px; */
+  text-align: center;
 }
 
 .logo-footer {
@@ -479,13 +487,21 @@ img {
 }
 
 .footer-text {
+  text-align: left;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  max-width: 264px;
+  /* max-width: 264px; */
+  margin-bottom: 72px;
+}
+
+.footer-soc {
+  margin: 0 auto;
+  margin-bottom: 72px;
 }
 
 .soc-text {
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -520,15 +536,24 @@ img {
 }
 
 .footer-form-box {
-  margin-left: 80px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* margin-left: 80px; */
 }
 
 .footer-form {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
 }
 
+.footer-label {
+  margin: 0 auto;
+}
+
 .form-text {
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -538,6 +563,7 @@ img {
 }
 
 .footer-input {
+  margin-bottom: 16px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   border: 1px solid #fff;
   border-radius: 4px;
@@ -556,6 +582,7 @@ img {
 }
 
 .footer-form-btn {
+  margin: 0 auto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
