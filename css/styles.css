@@ -996,6 +996,7 @@ img {
   }
 
   .mob-menu-btn {
+    cursor: pointer;
     display: none;
   }
 
