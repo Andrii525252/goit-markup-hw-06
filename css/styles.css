@@ -995,6 +995,10 @@ img {
     margin: 0 auto;
   }
 
+  .mob-menu-btn {
+    display: none;
+  }
+
   .title {
     max-width: 768px;
     padding: 112px 0;
