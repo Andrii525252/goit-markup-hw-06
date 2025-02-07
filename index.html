@@ -17,7 +17,7 @@
     />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
           <a class="logo" href="./index.html"
@@ -47,8 +47,79 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="mob-menu-btn">
+          <svg class="mobile-menu-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burder"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu is-open">
+        <button type="button" class="mob-close">
+          <svg class="mob-icon-close" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav class="mob-nav">
+          <ul class="mob-menu-list">
+            <li class="mob-item">
+              <a class="mob-item-link" href="./index.html">Studio</a>
+            </li>
+            <li class="mob-item">
+              <a class="mob-item-link" href="">Portfolio</a>
+            </li>
+            <li class="mob-item">
+              <a class="mob-item-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mob-links">
+          <address class="mob-contacts-data">
+            <ul class="mob-adress-list">
+              <li>
+                <a class="mob-data-email" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="mob-data-phone" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mob-list-soc">
+            <li class="mob-item-icon">
+              <a class="mob-link" href="">
+                <svg class="mob-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-item-icon">
+              <a class="mob-link" href="">
+                <svg class=mob-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-item-icon">
+              <a class="mob-link" href="">
+                <svg class="mob-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-item-icon">
+              <a class="mob-link" href="">
+                <svg class="mob-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <main>
       <section class="title">
         <div class="container title-container">
@@ -61,11 +132,11 @@
           <h2 class="visually-hidden">Features</h2>
           <ul class="features-title-list">
             <li class="features-list-item">
-              <!-- <div class="features-icon-block">
+              <div class="features-icon-block">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna-1"></use>
                 </svg>
-              </div> -->
+              </div>
               <h3 class="list-title">Strategy</h3>
               <p class="features-text">
                 Our goal is to identify the business problem to walk away with
@@ -73,11 +144,11 @@
               </p>
             </li>
             <li class="features-list-item">
-              <!-- <div class="features-icon-block">
+              <div class="features-icon-block">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#icon-clock-1"></use>
                 </svg>
-              </div> -->
+              </div>
               <h3 class="list-title">Punctuality</h3>
               <p class="features-text">
                 Bring the key message to the brand's audience for the best price
@@ -85,11 +156,11 @@
               </p>
             </li>
             <li class="features-list-item">
-              <!-- <div class="features-icon-block">
+              <div class="features-icon-block">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram-1"></use>
                 </svg>
-              </div> -->
+              </div>
               <h3 class="list-title">Diligence</h3>
               <p class="features-text">
                 Research and confirm brands that present the strongest digital
@@ -97,11 +168,11 @@
               </p>
             </li>
             <li class="features-list-item">
-              <!-- <div class="features-icon-block">
+              <div class="features-icon-block">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#icon-astronaut-1"></use>
                 </svg>
-              </div> -->
+              </div>
               <h3 class="list-title">Technologies</h3>
               <p class="features-text">
                 Design practice focused on digital experiences. We bring forth a
