@@ -46,8 +46,10 @@ img {
 }
 
 .header {
-  /* padding-top: 24px;
-  padding-bottom: 24px; */
+  /* padding-top: 24px; */
+  /* padding-bottom: 24px; */
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -295,12 +297,22 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/title-photo.jpg);
+    url(../images/title-photo-mob-min.jpg);
   margin: 0 auto;
   /* max-width: 1440px; */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+@media screen and (min-resolution: 2x), (-webkit-min-device-pisel-ratio: 2x) {
+  .title {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/title-photo-mob-2x-min.jpg);
+  }
 }
 
 .title-header {
@@ -1004,6 +1016,8 @@ img {
   }
 
   .header {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .logo {
@@ -1027,6 +1041,21 @@ img {
   .title {
     max-width: 768px;
     padding: 112px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/title-photo-laptop-min.jpg);
+  }
+
+  @media screen and (min-resolution: 2x), (-webkit-min-device-pisel-ratio: 2x) {
+    .title {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/title-photo-laptop-2x-min.jpg);
+    }
   }
 
   .title-header {
@@ -1137,6 +1166,21 @@ img {
   .title {
     max-width: 1440px;
     padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/title-photo.jpg);
+  }
+
+  @media screen and (min-resolution: 2x), (-webkit-min-device-pisel-ratio: 2x) {
+    .title {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/title-photo-2x-min.jpg);
+    }
   }
 
   .features {
