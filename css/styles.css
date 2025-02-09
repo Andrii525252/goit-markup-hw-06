@@ -625,6 +625,7 @@ img {
 .footer-inf {
   /* margin-right: 120px; */
   text-align: center;
+  margin-bottom: 72px;
 }
 
 .logo-footer {
@@ -655,7 +656,6 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   /* max-width: 264px; */
-  margin-bottom: 72px;
 }
 
 .footer-soc {
@@ -708,7 +708,7 @@ img {
 .footer-form {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 16px;
 }
 
 .footer-label {
@@ -726,7 +726,6 @@ img {
 }
 
 .footer-input {
-  margin-bottom: 16px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   border: 1px solid #fff;
   border-radius: 4px;
@@ -1020,6 +1019,14 @@ img {
     padding-bottom: 0;
   }
 
+  .header-container {
+    align-items: center;
+  }
+
+  .header-item-link {
+    display: block;
+  }
+
   .logo {
     margin-right: 120px;
   }
@@ -1034,8 +1041,6 @@ img {
 
   .adress-list {
     flex-direction: column;
-    margin-bottom: 16px;
-    margin-top: 16px;
   }
 
   .title {
@@ -1127,6 +1132,10 @@ img {
     text-align: left;
   }
 
+  .footer-form {
+    gap: 24px;
+  }
+
   .modal {
     width: 408px;
     min-height: 584px;
@@ -1151,6 +1160,10 @@ img {
   .header {
     padding-top: 24px;
     padding-bottom: 24px;
+  }
+
+  .header-item-link {
+    display: inline;
   }
 
   .logo {
@@ -1245,6 +1258,7 @@ img {
 
   .footer-text {
     max-width: 264px;
+    margin-bottom: 0;
   }
 
   .footer-form-box {
